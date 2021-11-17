@@ -1,0 +1,43 @@
+scalar Date
+
+type Aluno {
+    id: ID!
+    nome: String!
+    curso: String!
+    semestre: Int!
+    ra: Int!
+    cpf: String!
+    cidade: String!
+    creation: Date!
+    lastUpdate: Date!
+}
+
+type Query {
+    alunos: [Aluno!]!
+    aluno(id: ID!): Aluno
+}
+
+type Mutation {
+    createAluno(
+        nome: String!, 
+        curso: String!, 
+        semestre: Int!, 
+        ra: Int!, 
+        cpf: String!, 
+        cidade: String! 
+    ): Aluno
+
+    updateAluno(
+        id: ID!
+        nome: String!, 
+        curso: String!, 
+        semestre: Int!, 
+        ra: Int!, 
+        cpf: String!, 
+        cidade: String! 
+    ): Aluno
+
+    deleteAluno(
+        id: ID!
+    ): Aluno
+}
