@@ -1,6 +1,9 @@
 {
   "name": "bcc-4returns-graphql",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js"
+  },
   "main": "index.js",
   "author": "Lucas Luan Silva <lucasluansilva00@hotmail.com>",
   "license": "MIT",
