@@ -66,7 +66,7 @@ module.exports = {
 
             alunos.splice(indice, 1);
 
-            return alunos[indice];
+            return null;
         },
     }
 };
